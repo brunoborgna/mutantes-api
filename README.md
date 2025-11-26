@@ -126,3 +126,17 @@ JDBC URL: jdbc:h2:mem:testdb
 User: sa
 
 Password: (dejar vacío)
+
+---
+
+## 🚀 DEMO EN VIVO (Nube)
+
+La API ya se encuentra desplegada y operativa en **Render**. Puedes probarla directamente sin instalar nada:
+
+* 📄 **Documentación & Prueba (Swagger):** 👉 [https://mutantes-api-borgnabruno.onrender.com/swagger-ui.html](https://mutantes-api-borgnabruno.onrender.com/swagger-ui.html)
+
+* 🏥 **Health Check:** [https://mutantes-api-borgnabruno.onrender.com/actuator/health](https://mutantes-api-borgnabruno.onrender.com/actuator/health)
+
+* **URL Base:** `https://mutantes-api-borgnabruno.onrender.com`
+
+---
