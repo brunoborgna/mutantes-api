@@ -1,0 +1,29 @@
+### 1. Prueba Mutante (Debería devolver 200 OK)
+POST http://localhost:8080/mutant
+Content-Type: application/json
+
+{
+    "dna": [
+        "ATGCGA",
+        "CAGTGC",
+        "TTATGT",
+        "AGAAGG",
+        "CCCCTA",
+        "TCACTG"
+    ]
+}
+
+### 2. Prueba Humano (Debería devolver 403 Forbidden)
+POST http://localhost:8080/mutant
+Content-Type: application/json
+
+{
+    "dna": [
+        "ATGCGA",
+        "CAGTGC",
+        "TTATTT",
+        "AGACGG",
+        "GCGTCA",
+        "TCACTG"
+    ]
+}
