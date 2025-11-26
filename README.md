@@ -4,6 +4,16 @@ Este proyecto es una API REST desarrollada en **Java** con **Spring Boot** para 
 
 El sistema cumple con los requisitos funcionales de detección horizontal, vertical y oblicua, y ha sido optimizado para manejar grandes volúmenes de datos mediante estrategias de **Terminación Temprana** y **Caché de Resultados (Hash SHA-256)**.
 
+---
+
+## 🔗 Enlaces del Proyecto
+
+* ☁️ **API en Producción (Render):** [https://mutantes-api-borgnabruno.onrender.com](https://mutantes-api-borgnabruno.onrender.com)
+* 📄 **Documentación Swagger:** [https://mutantes-api-borgnabruno.onrender.com/swagger-ui.html](https://mutantes-api-borgnabruno.onrender.com/swagger-ui.html)
+* 🐙 **Repositorio GitHub:** [https://github.com/brunoborgna/mutantes-api](https://github.com/brunoborgna/mutantes-api)
+
+---
+
 ## 🚀 Tecnologías Utilizadas
 
 * **Java 17** (Compatible con 21)
@@ -28,20 +38,20 @@ Descarga el archivo `.zip`, descomprímelo y abre una terminal en la carpeta ra�
 Puedes iniciar el servidor utilizando los siguientes comandos según tu sistema operativo:
 
 **En Windows:**
-bash
+
 ./gradlew.bat bootRun
 En Linux / Mac:
 
-Bash
+
 
 ./gradlew bootRun
 Una vez iniciado, verás el log indicando que la aplicación corre en el puerto 8080.
 
 📡 Uso de la API
 📄 Documentación Interactiva (Swagger UI)
-La forma más recomendada de probar la API es a través de Swagger, que permite enviar peticiones sin instalar herramientas extra.
+La forma más recomendada de probar la API localmente es a través de Swagger.
 
-👉 URL: http://localhost:8080/swagger-ui.html
+👉 URL Local: http://localhost:8080/swagger-ui.html
 
 Endpoints Principales
 1. Detectar Mutante
@@ -53,7 +63,7 @@ URL: /mutant
 
 Body (JSON):
 
-JSON
+
 
 {
   "dna": [
@@ -74,14 +84,14 @@ URL: /stats
 
 Respuesta (JSON):
 
-JSON
+
 
 {
   "count_mutant_dna": 40,
   "count_human_dna": 100,
   "ratio": 0.4
 }
-3. Health Check (Estado del Sistema)
+3. Health Check
 Verifica que la aplicación esté corriendo correctamente.
 
 Método: GET
@@ -98,20 +108,14 @@ Para correr todos los tests y verificar que el sistema funciona:
 
 Windows:
 
-Bash
-
 ./gradlew.bat test
 Linux / Mac:
 
-Bash
-
-    ./gradlew test
+./gradlew test
 Ver Reporte de Cobertura (Code Coverage)
 El proyecto genera un reporte HTML detallado sobre la cobertura de código (superior al 80%).
 
 Ejecuta el comando:
-
-Bash
 
 ./gradlew.bat test jacocoTestReport
 Abre el archivo generado en tu navegador: build/reports/jacoco/test/html/index.html
@@ -126,17 +130,3 @@ JDBC URL: jdbc:h2:mem:testdb
 User: sa
 
 Password: (dejar vacío)
-
----
-
-## 🚀 DEMO EN VIVO (Nube)
-
-La API ya se encuentra desplegada y operativa en **Render**. Puedes probarla directamente sin instalar nada:
-
-* 📄 **Documentación & Prueba (Swagger):** 👉 [https://mutantes-api-borgnabruno.onrender.com/swagger-ui.html](https://mutantes-api-borgnabruno.onrender.com/swagger-ui.html)
-
-* 🏥 **Health Check:** [https://mutantes-api-borgnabruno.onrender.com/actuator/health](https://mutantes-api-borgnabruno.onrender.com/actuator/health)
-
-* **URL Base:** `https://mutantes-api-borgnabruno.onrender.com`
-
----
